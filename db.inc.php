@@ -3,7 +3,7 @@
 try
 {
 	// Try to connect;
-	$pdo = new PDO('mysql:host=localhost; dbname=test_project', 'root', 'breakpoint1234');
+	$pdo = new PDO('mysql:host=localhost; dbname=test_project', 'root' $password);
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$pdo->exec('SET NAMES "utf8"');
 	$testConn = ("Connection Established");
